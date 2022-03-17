@@ -1,4 +1,4 @@
-<%= simple_form_for [ @list, @product_list ] do |f| %>
+<%= simple_form_for locales do |f| %>
   <%= f.association :product %>
   <%= f.input :quantity %>
   <%= f.button :submit %>
