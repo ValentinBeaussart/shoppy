@@ -6,25 +6,28 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.destroy_all
 puts "Cleaning db"
-
+User.destroy_all
 Product.destroy_all
 
-user = User.create!(
-  email: "test@test.test",
+val = User.create!(
+  email: "val@test.test",
+  password: "123456"
+)
+jo = User.create!(
+  email: "jo@test.test",
   password: "123456"
 )
 
-intermarche = List.create!(name: 'Intermarché', user: User.first)
-list2 = List.create!(name: 'Super U', user: User.first)
-list3 = List.create!(name: 'Carrefour', user: User.first)
+intermarche = List.create!(name: 'Intermarché', user: val)
+super_u = List.create!(name: 'Super U', user: jo)
+carrefour = List.create!(name: 'Carrefour', user: User.first)
 
 oeuf = Product.create!(name: 'Oeuf')
 banane = Product.create!(name: 'Banane')
-preservatif = Product.create!(name: 'préservatif')
+pain = Product.create!(name: 'Pain')
 
-ProductList.create!(quantity: '1', product: oeuf, list: intermarche)
+ProductList.create!(quantity: '1', product: oeuf, list: intermarche, taken: true)
 
 puts "#{User.count} user were created"
 puts "#{List.count} lists were created"

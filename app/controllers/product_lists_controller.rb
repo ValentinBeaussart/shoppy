@@ -1,8 +1,11 @@
 class ProductListsController < ApplicationController
 
-  def new
-    @list = List.find(params[:list_id])
-    @product_list = ProductList.new
+  def take_toggle
+    if self.taken == false
+      self.taken = true
+    else
+      self.taken = false
+    end
   end
 
   def create
@@ -15,6 +18,6 @@ class ProductListsController < ApplicationController
   private
 
   def product_params
-    params.require(:product_list).permit(:quantity)
+    params.require(:product_list).permit(:quantity, :product_id)
   end
 end
