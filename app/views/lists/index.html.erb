@@ -1,5 +1,9 @@
+<%= link_to "Ajouter", new_list_path(@list)  %>
 <% @lists.each do |list| %>
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
-<p><%= list.name %></p>
-</div>
+  <%= link_to list_path(list) do %>
+    <div class="card-category">
+      <p><%= list.name %></p>
+      <%= link_to "Supprimer", list, method: :delete, data: { confirm: "Etes vous sur ?" }%>
+    </div>
+  <% end %>
 <% end %>

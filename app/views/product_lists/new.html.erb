@@ -1,0 +1,5 @@
+<%= simple_form_for [ @list, @product_list ] do |f| %>
+  <%= f.association :product %>
+  <%= f.input :quantity %>
+  <%= f.button :submit %>
+<% end %>

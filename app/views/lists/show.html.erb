@@ -1,0 +1,8 @@
+<h1><%= @list.name %></h1>
+
+<% @list.product_lists.each do |product_list| %>
+  <%= product_list.quantity %>
+  <%= product_list.product.name %>
+<% end %>
+
+<%= link_to "Ajouter un produit", new_list_product_list_path(@list) %>

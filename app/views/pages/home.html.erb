@@ -169,9 +169,8 @@
 		</svg>
 	</div>
 </div>
-<div class="btn-home">
 <div id="wrapper">
-  <a href="#" class="my-super-cool-btn">
+<%= link_to lists_path, class: "my-super-cool-btn" do  %>
     <div class="dots-container">
       <div class="dot"></div>
       <div class="dot"></div>
@@ -179,6 +178,5 @@
       <div class="dot"></div>
     </div>
     <span>Go!</span>
-  </a>
-</div>
+  <% end %>
 </div>
