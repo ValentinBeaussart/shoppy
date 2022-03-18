@@ -12,7 +12,12 @@ class ProductListsController < ApplicationController
     @list = List.find(params[:list_id])
     @product_list = ProductList.new(product_params)
     @product_list.list = @list
-    redirect_to list_path(@list) if @product_list.save
+    if @product_list.save
+      redirect_to list_path(@list)
+    else
+      flash[:alert] = "Votre produit n'a pas été sauvegardé"
+    end
+
   end
 
   private
