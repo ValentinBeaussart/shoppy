@@ -6,6 +6,7 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    @product_lists = @list.product_lists.order(created_at: :desc)
   end
 
   def new

@@ -25,7 +25,13 @@
 }
 
 .card-product {
-  width: 100vh;
+  // margin-left: 20px;
+  margin: 0 auto;
+  // margin-right: 20px;
+  padding-left: 20px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.137);
+  width: 95vw;
   height: 40px;
   display: flex;
   align-items: center;

@@ -1,6 +1,6 @@
 <div class="form-lists">
 <%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
+  <%= f.input :name, label: 'Donne lui un petit nom'%>
+  <%= f.button :submit, "Je l'ajoute", placeholder: 'Intermarché...'%>
 <% end %>
 </div>

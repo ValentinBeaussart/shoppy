@@ -1,25 +1,21 @@
 <h1 class="show-title"><%= @list.name %></h1>
 
-<% @list.product_lists.each do |product_list| %>
+<% @product_lists.each do |product_list| %>
   <% if product_list.taken? %>
     <div class="card-product taken">
       <%= product_list.quantity %>
-      <% if product_list.quantity.to_i > 1 %>
-        <%= "#{product_list.product.name}s" %>
-      <% else %>
-        <%= product_list.product.name %>
+      <%= product_list.product.name %>
+      <%= link_to list_product_list_take_path(@list, product_list) do %>
+        <i class="fa-regular fa-square-check"></i>
       <% end %>
-      <a href=""></a>
     </div>
   <% else%>
-    <div class="card-product ">
+    <div class="card-product">
       <%= product_list.quantity %>
-      <% if product_list.quantity.to_i > 1 %>
-        <%= "#{product_list.product.name}s" %>
-      <% else %>
-        <%= product_list.product.name %>
+      <%= product_list.product.name %>
+      <%= link_to list_product_list_take_path(@list, product_list) do %>
+        <i class="fa-regular fa-square"></i>
       <% end %>
-      <a href=""></a>
     </div>
   <% end %>
 <% end %>
