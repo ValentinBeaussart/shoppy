@@ -1,11 +1,14 @@
 class ProductListsController < ApplicationController
 
-  def take_toggle
-    if self.taken == false
-      self.taken = true
+  def take
+    @product_list = ProductList.find(params[:product_list_id])
+    @list = List.find(params[:list_id])
+    if @product_list.taken?
+      @product_list.update_attribute(:taken, false)
     else
-      self.taken = false
+      @product_list.update_attribute(:taken, true)
     end
+    redirect_to list_path(@list)
   end
 
   def create

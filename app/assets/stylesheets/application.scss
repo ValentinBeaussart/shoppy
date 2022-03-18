@@ -11,3 +11,9 @@
 @import "components/index";
 @import "pages/index";
 @import "pages/show";
+
+body::after{
+  content: "";
+  height: 100px;
+  display: block;
+}
