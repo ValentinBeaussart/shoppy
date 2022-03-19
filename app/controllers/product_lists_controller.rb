@@ -1,5 +1,4 @@
 class ProductListsController < ApplicationController
-
   def take
     @product_list = ProductList.find(params[:product_list_id])
     @list = List.find(params[:list_id])
@@ -26,6 +25,6 @@ class ProductListsController < ApplicationController
   private
 
   def product_params
-    params.require(:product_list).permit(:quantity, :product_id)
+    params.require(:product_list).permit(:quantity, :unity, :product_id)
   end
 end
