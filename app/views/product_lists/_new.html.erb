@@ -1,5 +1,6 @@
 <%= simple_form_for locales do |f| %>
   <%= f.association :product, label: "Je cherche ce dont j'ai besoin.." %>
+  <%= f.input :unity, label: "Un pack, des kilos, un paquet.. ?", collection: ["L", "Kg", "Boîte", "Paquet", "Pack", "Sachet"] %>
   <%= f.input :quantity, label: "Je choisis la quantité.." %>
-  <%= f.button :submit, "J'ajoute mes produits 💙" %>
+  <%= f.button :submit, "Je l'ajoute dans ma liste 💙" %>
 <% end %>

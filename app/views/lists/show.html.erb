@@ -3,16 +3,14 @@
 <% @product_lists.each do |product_list| %>
   <% if product_list.taken? %>
     <div class="card-product taken">
-      <%= product_list.quantity %>
-      <%= product_list.product.name %>
+      <%= pluralize(product_list.quantity, product_list.unity, product_list.product.name.capitalize) %>
       <%= link_to list_product_list_take_path(@list, product_list) do %>
         <i class="fa-regular fa-square-check"></i>
       <% end %>
     </div>
   <% else%>
     <div class="card-product">
-      <%= product_list.quantity %>
-      <%= product_list.product.name %>
+      <%= pluralize(product_list.quantity, product_list.unity, product_list.product.name) %>
       <%= link_to list_product_list_take_path(@list, product_list) do %>
         <i class="fa-regular fa-square"></i>
       <% end %>

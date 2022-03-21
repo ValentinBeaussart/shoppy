@@ -23,19 +23,19 @@ intermarche = List.create!(name: 'Intermarché', user: val)
 super_u = List.create!(name: 'Super U', user: jo)
 carrefour = List.create!(name: 'Carrefour', user: User.first)
 
-oeuf = Product.create!(name: 'Oeuf')
+oeuf = Product.create!(name: 'Oeufs')
 banane = Product.create!(name: 'Banane')
 pain = Product.create!(name: 'Pain')
 pomme = Product.create!(name: 'Pomme')
 eau = Product.create!(name: 'Eau')
-pate = Product.create!(name: 'Pâte')
+pate = Product.create!(name: 'Pâtes')
 salade = Product.create!(name: 'Salade')
 biere = Product.create!(name: 'Bière')
 avocat = Product.create!(name: 'Avocat')
-raisin = Product.create!(name: 'Raisin')
+raisin = Product.create!(name: 'Raisins')
 ananas = Product.create!(name: 'Ananas')
 
-ProductList.create!(quantity: '1', product: oeuf, list: intermarche, taken: true)
+ProductList.create!(quantity: '1', product: oeuf, unity: "Boîte", list: intermarche, taken: true)
 
 puts "#{User.count} user were created"
 puts "#{List.count} lists were created"
