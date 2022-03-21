@@ -3,7 +3,7 @@
   <%= link_to list_path(list), class: "link-card-list" do %>
     <div class="card-category">
       <p><%= list.name %></p>
-      <%= link_to "Supprimer", list, method: :delete, data: { confirm: "Etes vous sur ?" }, class: "delete-card-list"%>
+      <%= link_to "", list, method: :delete, data: { confirm: "En es-tu sûr ?" }, class: "fa-regular fa-trash-can"%>
     </div>
   <% end %>
 <% end %>

@@ -14,28 +14,14 @@ val = User.create!(
   email: "val@test.test",
   password: "123456"
 )
-jo = User.create!(
-  email: "jo@test.test",
-  password: "123456"
-)
 
-intermarche = List.create!(name: 'Intermarché', user: val)
-super_u = List.create!(name: 'Super U', user: jo)
-carrefour = List.create!(name: 'Carrefour', user: User.first)
-
-oeuf = Product.create!(name: 'Oeufs')
-banane = Product.create!(name: 'Banane')
-pain = Product.create!(name: 'Pain')
-pomme = Product.create!(name: 'Pomme')
 eau = Product.create!(name: 'Eau')
 pate = Product.create!(name: 'Pâtes')
-salade = Product.create!(name: 'Salade')
-biere = Product.create!(name: 'Bière')
-avocat = Product.create!(name: 'Avocat')
-raisin = Product.create!(name: 'Raisins')
-ananas = Product.create!(name: 'Ananas')
-
-ProductList.create!(quantity: '1', product: oeuf, unity: "Boîte", list: intermarche, taken: true)
+compote = Product.create!(name: 'Compôte')
+shampoing = Product.create!(name: 'Shampoing')
+gruyere = Product.create!(name: 'Gruyère')
+pq = Product.create!(name: 'Papier-WC')
+dentifrice = Product.create!(name: 'Dentifrice')
 
 puts "#{User.count} user were created"
 puts "#{List.count} lists were created"
