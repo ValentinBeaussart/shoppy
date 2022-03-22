@@ -252,6 +252,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   devise
   dotenv-rails
+  execjs
   font-awesome-sass
   jbuilder (~> 2.7)
   listen (~> 3.3)
