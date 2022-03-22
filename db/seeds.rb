@@ -15,13 +15,13 @@ val = User.create!(
   password: "123456"
 )
 
-eau = Product.create!(name: 'Eau')
-pate = Product.create!(name: 'Pâtes')
-compote = Product.create!(name: 'Compôte')
-shampoing = Product.create!(name: 'Shampoing')
-gruyere = Product.create!(name: 'Gruyère')
-pq = Product.create!(name: 'Papier-WC')
-dentifrice = Product.create!(name: 'Dentifrice')
+# eau = Product.create!(name: 'Eau')
+# pate = Product.create!(name: 'Pâtes')
+# compote = Product.create!(name: 'Compôte')
+# shampoing = Product.create!(name: 'Shampoing')
+# gruyere = Product.create!(name: 'Gruyère')
+# pq = Product.create!(name: 'Papier-WC')
+# dentifrice = Product.create!(name: 'Dentifrice')
 
 puts "#{User.count} user were created"
 puts "#{List.count} lists were created"
