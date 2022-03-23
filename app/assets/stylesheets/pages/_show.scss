@@ -1,3 +1,20 @@
 .show-title {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-product {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.fa-square {
+  display: flex;
+  text-decoration: none;
+}
+
+.fa-square-check {
+  display: flex;
+  text-decoration: none;
 }
