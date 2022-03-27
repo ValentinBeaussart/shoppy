@@ -19,7 +19,11 @@ class ProductListsController < ApplicationController
     else
       flash[:alert] = "Votre produit n'a pas été sauvegardé"
     end
+  end
 
+  def destroy
+    @product_list = ProductList.find(params[:list_id])
+    @product_list.destroy
   end
 
   private
