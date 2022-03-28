@@ -7,6 +7,7 @@
       <%= link_to list_product_list_take_path(@list, product_list) do %>
         <i class="fa-regular fa-square-check"></i>
       <% end %>
+      <%= link_to "", [@list, product_list], method: :delete, data: { confirm: "En es-tu sûr ?" }, class: "fa-regular fa-trash-can"%>
     </div>
   <% else%>
     <div class="card-product">
@@ -16,5 +17,6 @@
       <% end %>
     </div>
   <% end %>
+      <%= link_to "", [@list, product_list], method: :delete, data: { confirm: "En es-tu sûr ?" }, class: "fa-regular fa-trash-can"%>
 <% end %>
 <%= render "product_lists/new", locales: [@list, ProductList.new] %>

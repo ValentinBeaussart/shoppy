@@ -22,8 +22,10 @@ class ProductListsController < ApplicationController
   end
 
   def destroy
-    @product_list = ProductList.find(params[:list_id])
+    @product_list = ProductList.find(params[:id])
+    @list = List.find(params[:list_id])
     @product_list.destroy
+    redirect_to list_path(@list)
   end
 
   private
