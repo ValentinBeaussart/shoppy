@@ -1,8 +1,17 @@
 // Import page-specific CSS files here.
 @import "home";
 
-.fa-trash-can {
-  bottom: 70px;
-  position: relative;
-  left: 110px;
+// .fa-trash-can {
+//   bottom: 70px;
+//   position: relative;
+//   left: 170px;
+// }
+
+.delete-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list-can {
+  color: #fff;
 }

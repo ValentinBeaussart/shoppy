@@ -13,6 +13,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   margin-bottom: 30px;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("shoppy-card.jpg");
+  flex-direction: column;
 }
 
 .delete-card-list {
@@ -40,4 +41,8 @@
 
 .card-product.taken {
   background-color: rgba(94, 255, 0, 0.13)
+}
+
+.card-title {
+  color: #fff;
 }
