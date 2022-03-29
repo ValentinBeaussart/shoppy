@@ -15,13 +15,27 @@ val = User.create!(
   password: "123456"
 )
 
-eau = Product.create!(name: 'Eau')
+salade = Product.create!(name: 'Salade')
 pate = Product.create!(name: 'Pâtes')
 compote = Product.create!(name: 'Compôte')
 shampoing = Product.create!(name: 'Shampoing')
 gruyere = Product.create!(name: 'Gruyère')
 pq = Product.create!(name: 'Papier-WC')
-dentifrice = Product.create!(name: 'Dentifrice')
+pdt = Product.create!(name: 'Pomme de terre')
+tmt = Product.create!(name: 'Tomate')
+moz = Product.create!(name: 'Mozzarella')
+br = Product.create!(name: 'Beurre')
+lait = Product.create!(name: 'Lait')
+brio = Product.create!(name: 'Brioche')
+conl = Product.create!(name: 'Conserve de légumes')
+poiss = Product.create!(name: 'Poisson pané')
+bat = Product.create!(name: 'Batonnet de patate')
+jard = Product.create!(name: 'Jardinière')
+gnocci = Product.create!(name: 'Gnocci')
+paf = Product.create!(name: 'Pâte fraîche')
+eau = Product.create!(name: 'Eau')
+frit = Product.create!(name: 'Frite')
+steak = Product.create!(name: 'Steak Hâché')
 
 puts "#{User.count} user were created"
 puts "#{List.count} lists were created"
