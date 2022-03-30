@@ -36,6 +36,9 @@ paf = Product.create!(name: 'Pâte fraîche')
 eau = Product.create!(name: 'Eau')
 frit = Product.create!(name: 'Frite')
 steak = Product.create!(name: 'Steak Hâché')
+lessi = Product.create!(name: 'Lessive')
+croqu = Product.create!(name: 'Croquettes chat')
+
 
 puts "#{User.count} user were created"
 puts "#{List.count} lists were created"
